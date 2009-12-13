@@ -13,6 +13,9 @@
 		FAB62FC010D560F200C049CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB62FBF10D560F200C049CE /* main.m */; };
 		FAB62FC710D5610E00C049CE /* TrayMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB62FC610D5610E00C049CE /* TrayMenu.m */; };
 		FAB62FDC10D56A5B00C049CE /* stamp.png in Resources */ = {isa = PBXBuildFile; fileRef = FAB62FDB10D56A5B00C049CE /* stamp.png */; };
+		FAB6303F10D56FA300C049CE /* MailCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB6303E10D56FA300C049CE /* MailCore.framework */; };
+		FAB6310210D5736500C049CE /* PreferenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB6310110D5736500C049CE /* PreferenceController.m */; };
+		FAB6310A10D5765900C049CE /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAB6310910D5765900C049CE /* Preferences.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,10 @@
 		FAB62FC510D5610E00C049CE /* TrayMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrayMenu.h; sourceTree = "<group>"; };
 		FAB62FC610D5610E00C049CE /* TrayMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrayMenu.m; sourceTree = "<group>"; };
 		FAB62FDB10D56A5B00C049CE /* stamp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stamp.png; sourceTree = "<group>"; };
+		FAB6303E10D56FA300C049CE /* MailCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MailCore.framework; path = Library/Frameworks/MailCore.framework; sourceTree = SDKROOT; };
+		FAB6310010D5736500C049CE /* PreferenceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferenceController.h; sourceTree = "<group>"; };
+		FAB6310110D5736500C049CE /* PreferenceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferenceController.m; sourceTree = "<group>"; };
+		FAB6310910D5765900C049CE /* Preferences.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Preferences.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +45,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				FAB6303F10D56FA300C049CE /* MailCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +59,8 @@
 				FAB62FC610D5610E00C049CE /* TrayMenu.m */,
 				FAB62FBC10D5609600C049CE /* Controller.h */,
 				FAB62FBD10D5609600C049CE /* Controller.m */,
+				FAB6310010D5736500C049CE /* PreferenceController.h */,
+				FAB6310110D5736500C049CE /* PreferenceController.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -58,6 +68,7 @@
 		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FAB6303E10D56FA300C049CE /* MailCore.framework */,
 				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
 			);
 			name = "Linked Frameworks";
@@ -108,6 +119,7 @@
 				FAB62FDB10D56A5B00C049CE /* stamp.png */,
 				8D1107310486CEB800E47090 /* Stamps-Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				FAB6310910D5765900C049CE /* Preferences.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -166,6 +178,7 @@
 			files = (
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				FAB62FDC10D56A5B00C049CE /* stamp.png in Resources */,
+				FAB6310A10D5765900C049CE /* Preferences.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,6 +192,7 @@
 				FAB62FBE10D5609600C049CE /* Controller.m in Sources */,
 				FAB62FC010D560F200C049CE /* main.m in Sources */,
 				FAB62FC710D5610E00C049CE /* TrayMenu.m in Sources */,
+				FAB6310210D5736500C049CE /* PreferenceController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

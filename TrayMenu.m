@@ -10,6 +10,11 @@
 	myController = ctrl;
 	return self;
 }
+
+- (void) actionPreferences:(id) sender
+{
+	[myController showPrefs];
+}
 	
 
 - (void) actionQuit:(id)sender {
@@ -20,6 +25,12 @@
 	NSZone *menuZone = [NSMenu menuZone];
 	NSMenu *menu = [[NSMenu allocWithZone:menuZone] init];
 	NSMenuItem *menuItem;
+	
+	//Preferences
+	menuItem = [menu addItemWithTitle:@"Preferences..."
+							   action:@selector(actionPreferences:)
+						keyEquivalent:@""];
+	[menuItem setTarget:self];
 	
 	// Add Quit Action
 	menuItem = [menu addItemWithTitle:@"Quit"
